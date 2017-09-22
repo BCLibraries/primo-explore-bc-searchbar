@@ -20,12 +20,12 @@ angular
    .component('prmSearchBarAfter', {
       bindings: {parentCtrl: '<'},
       controller: 'prmSearchBarAfterController',
-      templateUrl: './html/search_links.html'
+      templateUrl: 'primo-explore-bc-searchbar/html/search_links.html'
    })
 
    .component('prmJournalsSearchBarAfter', {
       bindings: {parentCtrl: '<'},
       controller: 'prmSearchBarAfterController',
-      templateUrl: './html/search_links.html'
+      templateUrl: 'primo-explore-bc-searchbar/html/search_links.html'
    });
 
