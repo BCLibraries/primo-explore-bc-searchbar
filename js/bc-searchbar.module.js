@@ -1,5 +1,5 @@
 angular
-   .module('bc-searchbar', ['angularLoad'])
+   .module('bc-searchbar', [])
    .controller('prmSearchBarAfterController', [function() {
       var vm = this;
       vm.searchOperator = vm.parentCtrl.searchOperator;
@@ -28,4 +28,3 @@ angular
       controller: 'prmSearchBarAfterController',
       templateUrl: 'primo-explore-bc-searchbar/html/search_links.html'
    });
-
