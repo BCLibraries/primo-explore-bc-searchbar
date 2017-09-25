@@ -10,6 +10,11 @@
     <div class="layout-column" layout="column">
       <a ng-href="jsearch?query=any,contains,{{$ctrl.getQuery()}}&tab=jsearch_slot&vid=bclib_new&;lang=en_US&;sortby=rank&journals=any,{{$ctrl.getQuery()}}" class="search-link journals-search-link md-button" ng-class="{ 'selected': $ctrl.selectedTab() == 'jsearch_slot' }">Journals</a>
     </div>
+    <div class="layout-column" layout="column">
+	<a target="_self" ng-href="search?tab=bcl_only&vid=bclib_new&sortby=rank&offset=0" class="search-link book-search-link md-button">
+	    <prm-icon icon-type="svg" svg-icon-set="primo-ui" icon-definition="replay"></prm-icon><span>Start Over</span>
+	</a>
+    </div>
   </div>
 </div>
 <div ng-if="!$ctrl.getQuery()" ng-class="{'hidden': $ctrl.advancedSearch}" class="search-links-wrapper layout-row" layout="row">
